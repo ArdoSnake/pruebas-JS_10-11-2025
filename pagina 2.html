@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tabla de Operaciones</title>
+  <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+  <header>
+    <h1>Operaciones con JavaScript</h1>
+    <p>Presiona un botón JS para ingresar valores y calcular.</p>
+  </header>
+
+  <table>
+    <thead>
+      <tr>
+        <th class="columna-animada">OPERACIÓN</th>
+        <th class="columna-animada">DESCRIPCIÓN</th>
+        <th class="columna-animada">BOTONES</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Multiplicación</td>
+        <td>Multiplica 2 números ingresados</td>
+        <td><button class="calc" data-op="multiplicacion">JS</button></td>
+      </tr>
+      <tr>
+        <td>Exponente 2</td>
+        <td>Eleva al cuadrado un número ingresado</td>
+        <td><button class="calc" data-op="exponente">JS</button></td>
+      </tr>
+      <tr>
+        <td>Resta</td>
+        <td>Resta 2 números ingresados</td>
+        <td><button class="calc" data-op="resta">JS</button></td>
+      </tr>
+      <tr>
+        <td colspan="3" id="resultado" class="resultado">Resultado: —</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="botones">
+    <button class="btn animado" data-link="index.html">Página Principal</button>
+    <button class="btn animado" data-link="pagina 1.html">Ir a Galería</button>
+  </div>
+
+  <script src="ejemploscript.js"></script>
+</body>
+</html>
